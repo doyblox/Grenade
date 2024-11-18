@@ -1,0 +1,145 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up background and font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: url('background-6795626_1280.png') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover;
+}
+
+/* Container for forms */
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Adds blur effect for modern browsers */
+}
+
+/* Form headers */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00FF00; /* Neon Green */
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1d1d1d;
+    color: white;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00FF00; /* Neon Green outline on focus */
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    background-color: #00FF00; /* Neon Green button */
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #32CD32; /* Lighter green on hover */
+}
+
+/* Links */
+a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Game Selection Styles */
+.game-selection {
+    text-align: center;
+    color: #00FFFF; /* Neon Cyan */
+}
+
+.game-selection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.game-selection li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-selection img {
+    width: 50px; /* Set a fixed size for images */
+    height: 50px;
+    margin-right: 10px; /* Space between image and game name */
+    border-radius: 5px; /* Round the edges of the images */
+}
+
+.game-selection a {
+    color: #00FFFF;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.game-selection a:hover {
+    color: #00B3B3; /* Lighter Neon Cyan on hover */
+}
+
+/* Error messages */
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Logout button */
+button.logout {
+    background-color: red; /* Red logout button */
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button.logout:hover {
+    background-color: darkred; /* Darker red on hover */
+}
